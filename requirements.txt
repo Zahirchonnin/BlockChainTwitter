@@ -1,0 +1,3 @@
+eth-brownie==1.14.6
+PyQt5
+ganache-cli

@@ -1,0 +1,7022 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "gas": 16986,
+      "inputs": [],
+      "name": "getName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "gas": 153337,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "SingUp",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "gas": 45685,
+      "inputs": [],
+      "name": "logIn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "gas": 462336,
+      "inputs": [
+        {
+          "name": "tweet",
+          "type": "string"
+        },
+        {
+          "name": "date",
+          "type": "uint256"
+        }
+      ],
+      "name": "newTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/TwitterOnBlockChain.vy"
+  },
+  "ast": {
+    "ast_type": "Module",
+    "body": [
+      {
+        "ast_type": "StructDef",
+        "body": [
+          {
+            "annotation": {
+              "ast_type": "Subscript",
+              "col_offset": 13,
+              "end_col_offset": 24,
+              "end_lineno": 5,
+              "lineno": 5,
+              "node_id": 5,
+              "slice": {
+                "ast_type": "Index",
+                "col_offset": 13,
+                "end_col_offset": 24,
+                "end_lineno": 5,
+                "lineno": 5,
+                "node_id": 10,
+                "src": "47:11:0",
+                "value": {
+                  "ast_type": "Int",
+                  "col_offset": 20,
+                  "end_col_offset": 23,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "node_id": 8,
+                  "src": "54:3:0",
+                  "value": 280
+                }
+              },
+              "src": "47:11:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 13,
+                "end_col_offset": 19,
+                "end_lineno": 5,
+                "id": "String",
+                "lineno": 5,
+                "node_id": 6,
+                "src": "47:6:0"
+              }
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 24,
+            "end_lineno": 5,
+            "lineno": 5,
+            "node_id": 2,
+            "simple": 1,
+            "src": "38:20:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 11,
+              "end_lineno": 5,
+              "id": "message",
+              "lineno": 5,
+              "node_id": 3,
+              "src": "38:7:0"
+            },
+            "value": null
+          },
+          {
+            "annotation": {
+              "ast_type": "Name",
+              "col_offset": 11,
+              "end_col_offset": 18,
+              "end_lineno": 6,
+              "id": "address",
+              "lineno": 6,
+              "node_id": 14,
+              "src": "70:7:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 18,
+            "end_lineno": 6,
+            "lineno": 6,
+            "node_id": 11,
+            "simple": 1,
+            "src": "63:14:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 9,
+              "end_lineno": 6,
+              "id": "_addr",
+              "lineno": 6,
+              "node_id": 12,
+              "src": "63:5:0"
+            },
+            "value": null
+          },
+          {
+            "annotation": {
+              "ast_type": "Name",
+              "col_offset": 10,
+              "end_col_offset": 17,
+              "end_lineno": 7,
+              "id": "uint256",
+              "lineno": 7,
+              "node_id": 19,
+              "src": "88:7:0"
+            },
+            "ast_type": "AnnAssign",
+            "col_offset": 4,
+            "end_col_offset": 17,
+            "end_lineno": 7,
+            "lineno": 7,
+            "node_id": 16,
+            "simple": 1,
+            "src": "82:13:0",
+            "target": {
+              "ast_type": "Name",
+              "col_offset": 4,
+              "end_col_offset": 8,
+              "end_lineno": 7,
+              "id": "date",
+              "lineno": 7,
+              "node_id": 17,
+              "src": "82:4:0"
+            },
+            "value": null
+          }
+        ],
+        "col_offset": 0,
+        "end_col_offset": 17,
+        "end_lineno": 7,
+        "lineno": 4,
+        "name": "Tweet",
+        "node_id": 1,
+        "src": "20:75:0"
+      },
+      {
+        "annotation": {
+          "ast_type": "Subscript",
+          "col_offset": 8,
+          "end_col_offset": 31,
+          "end_lineno": 9,
+          "lineno": 9,
+          "node_id": 24,
+          "slice": {
+            "ast_type": "Index",
+            "col_offset": 8,
+            "end_col_offset": 31,
+            "end_lineno": 9,
+            "lineno": 9,
+            "node_id": 34,
+            "src": "105:23:0",
+            "value": {
+              "ast_type": "Tuple",
+              "col_offset": 16,
+              "elements": [
+                {
+                  "ast_type": "Name",
+                  "col_offset": 16,
+                  "end_col_offset": 23,
+                  "end_lineno": 9,
+                  "id": "uint256",
+                  "lineno": 9,
+                  "node_id": 28,
+                  "src": "113:7:0"
+                },
+                {
+                  "ast_type": "Name",
+                  "col_offset": 25,
+                  "end_col_offset": 30,
+                  "end_lineno": 9,
+                  "id": "Tweet",
+                  "lineno": 9,
+                  "node_id": 30,
+                  "src": "122:5:0"
+                }
+              ],
+              "end_col_offset": 30,
+              "end_lineno": 9,
+              "lineno": 9,
+              "node_id": 27,
+              "src": "113:14:0"
+            }
+          },
+          "src": "105:23:0",
+          "value": {
+            "ast_type": "Name",
+            "col_offset": 8,
+            "end_col_offset": 15,
+            "end_lineno": 9,
+            "id": "HashMap",
+            "lineno": 9,
+            "node_id": 25,
+            "src": "105:7:0"
+          }
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 31,
+        "end_lineno": 9,
+        "lineno": 9,
+        "node_id": 21,
+        "simple": 1,
+        "src": "97:31:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 6,
+          "end_lineno": 9,
+          "id": "tweets",
+          "lineno": 9,
+          "node_id": 22,
+          "src": "97:6:0"
+        },
+        "value": null
+      },
+      {
+        "annotation": {
+          "ast_type": "Name",
+          "col_offset": 14,
+          "end_col_offset": 21,
+          "end_lineno": 10,
+          "id": "uint256",
+          "lineno": 10,
+          "node_id": 38,
+          "src": "143:7:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 21,
+        "end_lineno": 10,
+        "lineno": 10,
+        "node_id": 35,
+        "simple": 1,
+        "src": "129:21:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 12,
+          "end_lineno": 10,
+          "id": "tweets_count",
+          "lineno": 10,
+          "node_id": 36,
+          "src": "129:12:0"
+        },
+        "value": null
+      },
+      {
+        "annotation": {
+          "ast_type": "Subscript",
+          "col_offset": 12,
+          "end_col_offset": 40,
+          "end_lineno": 12,
+          "lineno": 12,
+          "node_id": 43,
+          "slice": {
+            "ast_type": "Index",
+            "col_offset": 12,
+            "end_col_offset": 40,
+            "end_lineno": 12,
+            "lineno": 12,
+            "node_id": 57,
+            "src": "164:28:0",
+            "value": {
+              "ast_type": "Tuple",
+              "col_offset": 20,
+              "elements": [
+                {
+                  "ast_type": "Name",
+                  "col_offset": 20,
+                  "end_col_offset": 27,
+                  "end_lineno": 12,
+                  "id": "address",
+                  "lineno": 12,
+                  "node_id": 47,
+                  "src": "172:7:0"
+                },
+                {
+                  "ast_type": "Subscript",
+                  "col_offset": 29,
+                  "end_col_offset": 39,
+                  "end_lineno": 12,
+                  "lineno": 12,
+                  "node_id": 49,
+                  "slice": {
+                    "ast_type": "Index",
+                    "col_offset": 29,
+                    "end_col_offset": 39,
+                    "end_lineno": 12,
+                    "lineno": 12,
+                    "node_id": 54,
+                    "src": "181:10:0",
+                    "value": {
+                      "ast_type": "Int",
+                      "col_offset": 36,
+                      "end_col_offset": 38,
+                      "end_lineno": 12,
+                      "lineno": 12,
+                      "node_id": 52,
+                      "src": "188:2:0",
+                      "value": 30
+                    }
+                  },
+                  "src": "181:10:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 29,
+                    "end_col_offset": 35,
+                    "end_lineno": 12,
+                    "id": "String",
+                    "lineno": 12,
+                    "node_id": 50,
+                    "src": "181:6:0"
+                  }
+                }
+              ],
+              "end_col_offset": 39,
+              "end_lineno": 12,
+              "lineno": 12,
+              "node_id": 46,
+              "src": "172:19:0"
+            }
+          },
+          "src": "164:28:0",
+          "value": {
+            "ast_type": "Name",
+            "col_offset": 12,
+            "end_col_offset": 19,
+            "end_lineno": 12,
+            "id": "HashMap",
+            "lineno": 12,
+            "node_id": 44,
+            "src": "164:7:0"
+          }
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 40,
+        "end_lineno": 12,
+        "lineno": 12,
+        "node_id": 40,
+        "simple": 1,
+        "src": "152:40:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 10,
+          "end_lineno": 12,
+          "id": "users_data",
+          "lineno": 12,
+          "node_id": 41,
+          "src": "152:10:0"
+        },
+        "value": null
+      },
+      {
+        "annotation": {
+          "ast_type": "Subscript",
+          "col_offset": 12,
+          "end_col_offset": 23,
+          "end_lineno": 13,
+          "lineno": 13,
+          "node_id": 61,
+          "slice": {
+            "ast_type": "Index",
+            "col_offset": 12,
+            "end_col_offset": 23,
+            "end_lineno": 13,
+            "lineno": 13,
+            "node_id": 66,
+            "src": "205:11:0",
+            "value": {
+              "ast_type": "Int",
+              "col_offset": 20,
+              "end_col_offset": 22,
+              "end_lineno": 13,
+              "lineno": 13,
+              "node_id": 64,
+              "src": "213:2:0",
+              "value": 10
+            }
+          },
+          "src": "205:11:0",
+          "value": {
+            "ast_type": "Name",
+            "col_offset": 12,
+            "end_col_offset": 19,
+            "end_lineno": 13,
+            "id": "address",
+            "lineno": 13,
+            "node_id": 62,
+            "src": "205:7:0"
+          }
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 23,
+        "end_lineno": 13,
+        "lineno": 13,
+        "node_id": 58,
+        "simple": 1,
+        "src": "193:23:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 10,
+          "end_lineno": 13,
+          "id": "users_addr",
+          "lineno": 13,
+          "node_id": 59,
+          "src": "193:10:0"
+        },
+        "value": null
+      },
+      {
+        "annotation": {
+          "ast_type": "Name",
+          "col_offset": 6,
+          "end_col_offset": 13,
+          "end_lineno": 14,
+          "id": "address",
+          "lineno": 14,
+          "node_id": 70,
+          "src": "223:7:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 13,
+        "end_lineno": 14,
+        "lineno": 14,
+        "node_id": 67,
+        "simple": 1,
+        "src": "217:13:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 4,
+          "end_lineno": 14,
+          "id": "user",
+          "lineno": 14,
+          "node_id": 68,
+          "src": "217:4:0"
+        },
+        "value": null
+      },
+      {
+        "annotation": {
+          "ast_type": "Name",
+          "col_offset": 12,
+          "end_col_offset": 19,
+          "end_lineno": 15,
+          "id": "uint256",
+          "lineno": 15,
+          "node_id": 75,
+          "src": "243:7:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 19,
+        "end_lineno": 15,
+        "lineno": 15,
+        "node_id": 72,
+        "simple": 1,
+        "src": "231:19:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 10,
+          "end_lineno": 15,
+          "id": "userus_num",
+          "lineno": 15,
+          "node_id": 73,
+          "src": "231:10:0"
+        },
+        "value": null
+      },
+      {
+        "args": {
+          "args": [],
+          "ast_type": "arguments",
+          "col_offset": 0,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 3,
+          "end_lineno": 19,
+          "lineno": 19,
+          "node_id": 78,
+          "src": "263:3:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 25,
+            "end_lineno": 20,
+            "lineno": 20,
+            "node_id": 79,
+            "src": "283:21:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "tweets_count",
+              "col_offset": 4,
+              "end_col_offset": 21,
+              "end_lineno": 20,
+              "lineno": 20,
+              "node_id": 80,
+              "src": "283:17:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 20,
+                "id": "self",
+                "lineno": 20,
+                "node_id": 81,
+                "src": "283:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Int",
+              "col_offset": 24,
+              "end_col_offset": 25,
+              "end_lineno": 20,
+              "lineno": 20,
+              "node_id": 84,
+              "src": "303:1:0",
+              "value": 0
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 23,
+            "end_lineno": 21,
+            "lineno": 21,
+            "node_id": 85,
+            "src": "309:19:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "userus_num",
+              "col_offset": 4,
+              "end_col_offset": 19,
+              "end_lineno": 21,
+              "lineno": 21,
+              "node_id": 86,
+              "src": "309:15:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 21,
+                "id": "self",
+                "lineno": 21,
+                "node_id": 87,
+                "src": "309:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Int",
+              "col_offset": 22,
+              "end_col_offset": 23,
+              "end_lineno": 21,
+              "lineno": 21,
+              "node_id": 90,
+              "src": "327:1:0",
+              "value": 0
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 18,
+            "id": "external",
+            "lineno": 18,
+            "node_id": 91,
+            "src": "254:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 23,
+        "end_lineno": 21,
+        "lineno": 19,
+        "name": "__init__",
+        "node_id": 77,
+        "pos": null,
+        "returns": null,
+        "src": "263:65:0"
+      },
+      {
+        "args": {
+          "args": [],
+          "ast_type": "arguments",
+          "col_offset": 0,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 3,
+          "end_lineno": 24,
+          "lineno": 24,
+          "node_id": 94,
+          "src": "340:3:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assert",
+            "col_offset": 4,
+            "end_col_offset": 63,
+            "end_lineno": 25,
+            "lineno": 25,
+            "msg": {
+              "ast_type": "Str",
+              "col_offset": 42,
+              "end_col_offset": 63,
+              "end_lineno": 25,
+              "lineno": 25,
+              "node_id": 106,
+              "src": "411:21:0",
+              "value": "!You not singed in."
+            },
+            "node_id": 95,
+            "src": "373:59:0",
+            "test": {
+              "ast_type": "Compare",
+              "col_offset": 11,
+              "end_col_offset": 40,
+              "end_lineno": 25,
+              "left": {
+                "ast_type": "Attribute",
+                "attr": "sender",
+                "col_offset": 11,
+                "end_col_offset": 21,
+                "end_lineno": 25,
+                "lineno": 25,
+                "node_id": 97,
+                "src": "380:10:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 11,
+                  "end_col_offset": 14,
+                  "end_lineno": 25,
+                  "id": "msg",
+                  "lineno": 25,
+                  "node_id": 98,
+                  "src": "380:3:0"
+                }
+              },
+              "lineno": 25,
+              "node_id": 96,
+              "op": {
+                "ast_type": "In",
+                "col_offset": 11,
+                "end_col_offset": 40,
+                "end_lineno": 25,
+                "lineno": 25,
+                "node_id": 197,
+                "src": "380:29:0"
+              },
+              "right": {
+                "ast_type": "Attribute",
+                "attr": "users_addr",
+                "col_offset": 25,
+                "end_col_offset": 40,
+                "end_lineno": 25,
+                "lineno": 25,
+                "node_id": 102,
+                "src": "394:15:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 25,
+                  "end_col_offset": 29,
+                  "end_lineno": 25,
+                  "id": "self",
+                  "lineno": 25,
+                  "node_id": 103,
+                  "src": "394:4:0"
+                }
+              },
+              "src": "380:29:0"
+            }
+          },
+          {
+            "ast_type": "Return",
+            "col_offset": 4,
+            "end_col_offset": 38,
+            "end_lineno": 26,
+            "lineno": 26,
+            "node_id": 107,
+            "src": "437:34:0",
+            "value": {
+              "ast_type": "Subscript",
+              "col_offset": 11,
+              "end_col_offset": 38,
+              "end_lineno": 26,
+              "lineno": 26,
+              "node_id": 108,
+              "slice": {
+                "ast_type": "Index",
+                "col_offset": 11,
+                "end_col_offset": 38,
+                "end_lineno": 26,
+                "lineno": 26,
+                "node_id": 118,
+                "src": "444:27:0",
+                "value": {
+                  "ast_type": "Attribute",
+                  "attr": "sender",
+                  "col_offset": 27,
+                  "end_col_offset": 37,
+                  "end_lineno": 26,
+                  "lineno": 26,
+                  "node_id": 113,
+                  "src": "460:10:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 27,
+                    "end_col_offset": 30,
+                    "end_lineno": 26,
+                    "id": "msg",
+                    "lineno": 26,
+                    "node_id": 114,
+                    "src": "460:3:0"
+                  }
+                }
+              },
+              "src": "444:27:0",
+              "value": {
+                "ast_type": "Attribute",
+                "attr": "users_data",
+                "col_offset": 11,
+                "end_col_offset": 26,
+                "end_lineno": 26,
+                "lineno": 26,
+                "node_id": 109,
+                "src": "444:15:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 11,
+                  "end_col_offset": 15,
+                  "end_lineno": 26,
+                  "id": "self",
+                  "lineno": 26,
+                  "node_id": 110,
+                  "src": "444:4:0"
+                }
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 23,
+            "id": "external",
+            "lineno": 23,
+            "node_id": 119,
+            "src": "331:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 38,
+        "end_lineno": 26,
+        "lineno": 24,
+        "name": "getName",
+        "node_id": 93,
+        "pos": null,
+        "returns": {
+          "ast_type": "Subscript",
+          "col_offset": 17,
+          "end_col_offset": 27,
+          "end_lineno": 24,
+          "lineno": 24,
+          "node_id": 121,
+          "slice": {
+            "ast_type": "Index",
+            "col_offset": 17,
+            "end_col_offset": 27,
+            "end_lineno": 24,
+            "lineno": 24,
+            "node_id": 126,
+            "src": "357:10:0",
+            "value": {
+              "ast_type": "Int",
+              "col_offset": 24,
+              "end_col_offset": 26,
+              "end_lineno": 24,
+              "lineno": 24,
+              "node_id": 124,
+              "src": "364:2:0",
+              "value": 30
+            }
+          },
+          "src": "357:10:0",
+          "value": {
+            "ast_type": "Name",
+            "col_offset": 17,
+            "end_col_offset": 23,
+            "end_lineno": 24,
+            "id": "String",
+            "lineno": 24,
+            "node_id": 122,
+            "src": "357:6:0"
+          }
+        },
+        "src": "340:131:0"
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Subscript",
+                "col_offset": 17,
+                "end_col_offset": 27,
+                "end_lineno": 29,
+                "lineno": 29,
+                "node_id": 130,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 17,
+                  "end_col_offset": 27,
+                  "end_lineno": 29,
+                  "lineno": 29,
+                  "node_id": 135,
+                  "src": "500:10:0",
+                  "value": {
+                    "ast_type": "Int",
+                    "col_offset": 24,
+                    "end_col_offset": 26,
+                    "end_lineno": 29,
+                    "lineno": 29,
+                    "node_id": 133,
+                    "src": "507:2:0",
+                    "value": 30
+                  }
+                },
+                "src": "500:10:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 17,
+                  "end_col_offset": 23,
+                  "end_lineno": 29,
+                  "id": "String",
+                  "lineno": 29,
+                  "node_id": 131,
+                  "src": "500:6:0"
+                }
+              },
+              "arg": "name",
+              "ast_type": "arg",
+              "col_offset": 11,
+              "end_col_offset": 27,
+              "end_lineno": 29,
+              "lineno": 29,
+              "node_id": 129,
+              "src": "494:16:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 11,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 27,
+          "end_lineno": 29,
+          "lineno": 29,
+          "node_id": 128,
+          "src": "494:16:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assert",
+            "col_offset": 4,
+            "end_col_offset": 70,
+            "end_lineno": 30,
+            "lineno": 30,
+            "msg": {
+              "ast_type": "Str",
+              "col_offset": 46,
+              "end_col_offset": 70,
+              "end_lineno": 30,
+              "lineno": 30,
+              "node_id": 149,
+              "src": "559:24:0",
+              "value": "!You already singed in"
+            },
+            "node_id": 136,
+            "src": "517:66:0",
+            "test": {
+              "ast_type": "UnaryOp",
+              "col_offset": 11,
+              "end_col_offset": 44,
+              "end_lineno": 30,
+              "lineno": 30,
+              "node_id": 137,
+              "op": {
+                "ast_type": "Not",
+                "col_offset": 11,
+                "end_col_offset": 44,
+                "end_lineno": 30,
+                "lineno": 30,
+                "node_id": 138,
+                "src": "524:33:0"
+              },
+              "operand": {
+                "ast_type": "Compare",
+                "col_offset": 15,
+                "end_col_offset": 44,
+                "end_lineno": 30,
+                "left": {
+                  "ast_type": "Attribute",
+                  "attr": "sender",
+                  "col_offset": 15,
+                  "end_col_offset": 25,
+                  "end_lineno": 30,
+                  "lineno": 30,
+                  "node_id": 140,
+                  "src": "528:10:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 15,
+                    "end_col_offset": 18,
+                    "end_lineno": 30,
+                    "id": "msg",
+                    "lineno": 30,
+                    "node_id": 141,
+                    "src": "528:3:0"
+                  }
+                },
+                "lineno": 30,
+                "node_id": 139,
+                "op": {
+                  "ast_type": "In",
+                  "col_offset": 15,
+                  "end_col_offset": 44,
+                  "end_lineno": 30,
+                  "lineno": 30,
+                  "node_id": 197,
+                  "src": "528:29:0"
+                },
+                "right": {
+                  "ast_type": "Attribute",
+                  "attr": "users_addr",
+                  "col_offset": 29,
+                  "end_col_offset": 44,
+                  "end_lineno": 30,
+                  "lineno": 30,
+                  "node_id": 145,
+                  "src": "542:15:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 29,
+                    "end_col_offset": 33,
+                    "end_lineno": 30,
+                    "id": "self",
+                    "lineno": 30,
+                    "node_id": 146,
+                    "src": "542:4:0"
+                  }
+                },
+                "src": "528:29:0"
+              },
+              "src": "524:33:0"
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 38,
+            "end_lineno": 31,
+            "lineno": 31,
+            "node_id": 150,
+            "src": "588:34:0",
+            "target": {
+              "ast_type": "Subscript",
+              "col_offset": 4,
+              "end_col_offset": 31,
+              "end_lineno": 31,
+              "lineno": 31,
+              "node_id": 151,
+              "slice": {
+                "ast_type": "Index",
+                "col_offset": 4,
+                "end_col_offset": 31,
+                "end_lineno": 31,
+                "lineno": 31,
+                "node_id": 161,
+                "src": "588:27:0",
+                "value": {
+                  "ast_type": "Attribute",
+                  "attr": "sender",
+                  "col_offset": 20,
+                  "end_col_offset": 30,
+                  "end_lineno": 31,
+                  "lineno": 31,
+                  "node_id": 156,
+                  "src": "604:10:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 20,
+                    "end_col_offset": 23,
+                    "end_lineno": 31,
+                    "id": "msg",
+                    "lineno": 31,
+                    "node_id": 157,
+                    "src": "604:3:0"
+                  }
+                }
+              },
+              "src": "588:27:0",
+              "value": {
+                "ast_type": "Attribute",
+                "attr": "users_data",
+                "col_offset": 4,
+                "end_col_offset": 19,
+                "end_lineno": 31,
+                "lineno": 31,
+                "node_id": 152,
+                "src": "588:15:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 4,
+                  "end_col_offset": 8,
+                  "end_lineno": 31,
+                  "id": "self",
+                  "lineno": 31,
+                  "node_id": 153,
+                  "src": "588:4:0"
+                }
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 34,
+              "end_col_offset": 38,
+              "end_lineno": 31,
+              "id": "name",
+              "lineno": 31,
+              "node_id": 162,
+              "src": "618:4:0"
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 49,
+            "end_lineno": 32,
+            "lineno": 32,
+            "node_id": 164,
+            "src": "627:45:0",
+            "target": {
+              "ast_type": "Subscript",
+              "col_offset": 4,
+              "end_col_offset": 36,
+              "end_lineno": 32,
+              "lineno": 32,
+              "node_id": 165,
+              "slice": {
+                "ast_type": "Index",
+                "col_offset": 4,
+                "end_col_offset": 36,
+                "end_lineno": 32,
+                "lineno": 32,
+                "node_id": 175,
+                "src": "627:32:0",
+                "value": {
+                  "ast_type": "Attribute",
+                  "attr": "userus_num",
+                  "col_offset": 20,
+                  "end_col_offset": 35,
+                  "end_lineno": 32,
+                  "lineno": 32,
+                  "node_id": 170,
+                  "src": "643:15:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 20,
+                    "end_col_offset": 24,
+                    "end_lineno": 32,
+                    "id": "self",
+                    "lineno": 32,
+                    "node_id": 171,
+                    "src": "643:4:0"
+                  }
+                }
+              },
+              "src": "627:32:0",
+              "value": {
+                "ast_type": "Attribute",
+                "attr": "users_addr",
+                "col_offset": 4,
+                "end_col_offset": 19,
+                "end_lineno": 32,
+                "lineno": 32,
+                "node_id": 166,
+                "src": "627:15:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 4,
+                  "end_col_offset": 8,
+                  "end_lineno": 32,
+                  "id": "self",
+                  "lineno": 32,
+                  "node_id": 167,
+                  "src": "627:4:0"
+                }
+              }
+            },
+            "value": {
+              "ast_type": "Attribute",
+              "attr": "sender",
+              "col_offset": 39,
+              "end_col_offset": 49,
+              "end_lineno": 32,
+              "lineno": 32,
+              "node_id": 176,
+              "src": "662:10:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 39,
+                "end_col_offset": 42,
+                "end_lineno": 32,
+                "id": "msg",
+                "lineno": 32,
+                "node_id": 177,
+                "src": "662:3:0"
+              }
+            }
+          },
+          {
+            "ast_type": "AugAssign",
+            "col_offset": 4,
+            "end_col_offset": 24,
+            "end_lineno": 33,
+            "lineno": 33,
+            "node_id": 180,
+            "op": {
+              "ast_type": "Add",
+              "col_offset": 4,
+              "end_col_offset": 24,
+              "end_lineno": 33,
+              "lineno": 33,
+              "node_id": 293,
+              "src": "677:20:0"
+            },
+            "src": "677:20:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "userus_num",
+              "col_offset": 4,
+              "end_col_offset": 19,
+              "end_lineno": 33,
+              "lineno": 33,
+              "node_id": 181,
+              "src": "677:15:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 33,
+                "id": "self",
+                "lineno": 33,
+                "node_id": 182,
+                "src": "677:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Int",
+              "col_offset": 23,
+              "end_col_offset": 24,
+              "end_lineno": 33,
+              "lineno": 33,
+              "node_id": 186,
+              "src": "696:1:0",
+              "value": 1
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 28,
+            "id": "external",
+            "lineno": 28,
+            "node_id": 187,
+            "src": "474:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 24,
+        "end_lineno": 33,
+        "lineno": 29,
+        "name": "SingUp",
+        "node_id": 127,
+        "pos": null,
+        "returns": null,
+        "src": "483:214:0"
+      },
+      {
+        "args": {
+          "args": [],
+          "ast_type": "arguments",
+          "col_offset": 0,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 3,
+          "end_lineno": 36,
+          "lineno": 36,
+          "node_id": 190,
+          "src": "709:3:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assert",
+            "col_offset": 4,
+            "end_col_offset": 66,
+            "end_lineno": 37,
+            "lineno": 37,
+            "msg": {
+              "ast_type": "Str",
+              "col_offset": 42,
+              "end_col_offset": 66,
+              "end_lineno": 37,
+              "lineno": 37,
+              "node_id": 202,
+              "src": "764:24:0",
+              "value": "!You are not singed in"
+            },
+            "node_id": 191,
+            "src": "726:62:0",
+            "test": {
+              "ast_type": "Compare",
+              "col_offset": 11,
+              "end_col_offset": 40,
+              "end_lineno": 37,
+              "left": {
+                "ast_type": "Attribute",
+                "attr": "sender",
+                "col_offset": 11,
+                "end_col_offset": 21,
+                "end_lineno": 37,
+                "lineno": 37,
+                "node_id": 193,
+                "src": "733:10:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 11,
+                  "end_col_offset": 14,
+                  "end_lineno": 37,
+                  "id": "msg",
+                  "lineno": 37,
+                  "node_id": 194,
+                  "src": "733:3:0"
+                }
+              },
+              "lineno": 37,
+              "node_id": 192,
+              "op": {
+                "ast_type": "In",
+                "col_offset": 11,
+                "end_col_offset": 40,
+                "end_lineno": 37,
+                "lineno": 37,
+                "node_id": 197,
+                "src": "733:29:0"
+              },
+              "right": {
+                "ast_type": "Attribute",
+                "attr": "users_addr",
+                "col_offset": 25,
+                "end_col_offset": 40,
+                "end_lineno": 37,
+                "lineno": 37,
+                "node_id": 198,
+                "src": "747:15:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 25,
+                  "end_col_offset": 29,
+                  "end_lineno": 37,
+                  "id": "self",
+                  "lineno": 37,
+                  "node_id": 199,
+                  "src": "747:4:0"
+                }
+              },
+              "src": "733:29:0"
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 26,
+            "end_lineno": 38,
+            "lineno": 38,
+            "node_id": 203,
+            "src": "793:22:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "user",
+              "col_offset": 4,
+              "end_col_offset": 13,
+              "end_lineno": 38,
+              "lineno": 38,
+              "node_id": 204,
+              "src": "793:9:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 38,
+                "id": "self",
+                "lineno": 38,
+                "node_id": 205,
+                "src": "793:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Attribute",
+              "attr": "sender",
+              "col_offset": 16,
+              "end_col_offset": 26,
+              "end_lineno": 38,
+              "lineno": 38,
+              "node_id": 208,
+              "src": "805:10:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 16,
+                "end_col_offset": 19,
+                "end_lineno": 38,
+                "id": "msg",
+                "lineno": 38,
+                "node_id": 209,
+                "src": "805:3:0"
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 35,
+            "id": "external",
+            "lineno": 35,
+            "node_id": 212,
+            "src": "700:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 26,
+        "end_lineno": 38,
+        "lineno": 36,
+        "name": "logIn",
+        "node_id": 189,
+        "pos": null,
+        "returns": null,
+        "src": "709:106:0"
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Subscript",
+                "col_offset": 20,
+                "end_col_offset": 31,
+                "end_lineno": 41,
+                "lineno": 41,
+                "node_id": 217,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 20,
+                  "end_col_offset": 31,
+                  "end_lineno": 41,
+                  "lineno": 41,
+                  "node_id": 222,
+                  "src": "847:11:0",
+                  "value": {
+                    "ast_type": "Int",
+                    "col_offset": 27,
+                    "end_col_offset": 30,
+                    "end_lineno": 41,
+                    "lineno": 41,
+                    "node_id": 220,
+                    "src": "854:3:0",
+                    "value": 280
+                  }
+                },
+                "src": "847:11:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 20,
+                  "end_col_offset": 26,
+                  "end_lineno": 41,
+                  "id": "String",
+                  "lineno": 41,
+                  "node_id": 218,
+                  "src": "847:6:0"
+                }
+              },
+              "arg": "tweet",
+              "ast_type": "arg",
+              "col_offset": 13,
+              "end_col_offset": 31,
+              "end_lineno": 41,
+              "lineno": 41,
+              "node_id": 216,
+              "src": "840:18:0"
+            },
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 39,
+                "end_col_offset": 46,
+                "end_lineno": 41,
+                "id": "uint256",
+                "lineno": 41,
+                "node_id": 224,
+                "src": "866:7:0"
+              },
+              "arg": "date",
+              "ast_type": "arg",
+              "col_offset": 33,
+              "end_col_offset": 46,
+              "end_lineno": 41,
+              "lineno": 41,
+              "node_id": 223,
+              "src": "860:13:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 13,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 46,
+          "end_lineno": 41,
+          "lineno": 41,
+          "node_id": 215,
+          "src": "840:33:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assert",
+            "col_offset": 4,
+            "end_col_offset": 53,
+            "end_lineno": 42,
+            "lineno": 42,
+            "msg": {
+              "ast_type": "Str",
+              "col_offset": 36,
+              "end_col_offset": 53,
+              "end_lineno": 42,
+              "lineno": 42,
+              "node_id": 237,
+              "src": "912:17:0",
+              "value": "!Sing in first."
+            },
+            "node_id": 226,
+            "src": "880:49:0",
+            "test": {
+              "ast_type": "Compare",
+              "col_offset": 11,
+              "end_col_offset": 34,
+              "end_lineno": 42,
+              "left": {
+                "ast_type": "Attribute",
+                "attr": "sender",
+                "col_offset": 11,
+                "end_col_offset": 21,
+                "end_lineno": 42,
+                "lineno": 42,
+                "node_id": 228,
+                "src": "887:10:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 11,
+                  "end_col_offset": 14,
+                  "end_lineno": 42,
+                  "id": "msg",
+                  "lineno": 42,
+                  "node_id": 229,
+                  "src": "887:3:0"
+                }
+              },
+              "lineno": 42,
+              "node_id": 227,
+              "op": {
+                "ast_type": "Eq",
+                "col_offset": 11,
+                "end_col_offset": 34,
+                "end_lineno": 42,
+                "lineno": 42,
+                "node_id": 232,
+                "src": "887:23:0"
+              },
+              "right": {
+                "ast_type": "Attribute",
+                "attr": "user",
+                "col_offset": 25,
+                "end_col_offset": 34,
+                "end_lineno": 42,
+                "lineno": 42,
+                "node_id": 233,
+                "src": "901:9:0",
+                "value": {
+                  "ast_type": "Name",
+                  "col_offset": 25,
+                  "end_col_offset": 29,
+                  "end_lineno": 42,
+                  "id": "self",
+                  "lineno": 42,
+                  "node_id": 234,
+                  "src": "901:4:0"
+                }
+              },
+              "src": "887:23:0"
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 50,
+            "end_lineno": 43,
+            "lineno": 43,
+            "node_id": 238,
+            "src": "934:46:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "message",
+              "col_offset": 4,
+              "end_col_offset": 42,
+              "end_lineno": 43,
+              "lineno": 43,
+              "node_id": 239,
+              "src": "934:38:0",
+              "value": {
+                "ast_type": "Subscript",
+                "col_offset": 4,
+                "end_col_offset": 34,
+                "end_lineno": 43,
+                "lineno": 43,
+                "node_id": 240,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 4,
+                  "end_col_offset": 34,
+                  "end_lineno": 43,
+                  "lineno": 43,
+                  "node_id": 250,
+                  "src": "934:30:0",
+                  "value": {
+                    "ast_type": "Attribute",
+                    "attr": "tweets_count",
+                    "col_offset": 16,
+                    "end_col_offset": 33,
+                    "end_lineno": 43,
+                    "lineno": 43,
+                    "node_id": 245,
+                    "src": "946:17:0",
+                    "value": {
+                      "ast_type": "Name",
+                      "col_offset": 16,
+                      "end_col_offset": 20,
+                      "end_lineno": 43,
+                      "id": "self",
+                      "lineno": 43,
+                      "node_id": 246,
+                      "src": "946:4:0"
+                    }
+                  }
+                },
+                "src": "934:30:0",
+                "value": {
+                  "ast_type": "Attribute",
+                  "attr": "tweets",
+                  "col_offset": 4,
+                  "end_col_offset": 15,
+                  "end_lineno": 43,
+                  "lineno": 43,
+                  "node_id": 241,
+                  "src": "934:11:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 4,
+                    "end_col_offset": 8,
+                    "end_lineno": 43,
+                    "id": "self",
+                    "lineno": 43,
+                    "node_id": 242,
+                    "src": "934:4:0"
+                  }
+                }
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 45,
+              "end_col_offset": 50,
+              "end_lineno": 43,
+              "id": "tweet",
+              "lineno": 43,
+              "node_id": 252,
+              "src": "975:5:0"
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 53,
+            "end_lineno": 44,
+            "lineno": 44,
+            "node_id": 254,
+            "src": "985:49:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "_addr",
+              "col_offset": 4,
+              "end_col_offset": 40,
+              "end_lineno": 44,
+              "lineno": 44,
+              "node_id": 255,
+              "src": "985:36:0",
+              "value": {
+                "ast_type": "Subscript",
+                "col_offset": 4,
+                "end_col_offset": 34,
+                "end_lineno": 44,
+                "lineno": 44,
+                "node_id": 256,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 4,
+                  "end_col_offset": 34,
+                  "end_lineno": 44,
+                  "lineno": 44,
+                  "node_id": 266,
+                  "src": "985:30:0",
+                  "value": {
+                    "ast_type": "Attribute",
+                    "attr": "tweets_count",
+                    "col_offset": 16,
+                    "end_col_offset": 33,
+                    "end_lineno": 44,
+                    "lineno": 44,
+                    "node_id": 261,
+                    "src": "997:17:0",
+                    "value": {
+                      "ast_type": "Name",
+                      "col_offset": 16,
+                      "end_col_offset": 20,
+                      "end_lineno": 44,
+                      "id": "self",
+                      "lineno": 44,
+                      "node_id": 262,
+                      "src": "997:4:0"
+                    }
+                  }
+                },
+                "src": "985:30:0",
+                "value": {
+                  "ast_type": "Attribute",
+                  "attr": "tweets",
+                  "col_offset": 4,
+                  "end_col_offset": 15,
+                  "end_lineno": 44,
+                  "lineno": 44,
+                  "node_id": 257,
+                  "src": "985:11:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 4,
+                    "end_col_offset": 8,
+                    "end_lineno": 44,
+                    "id": "self",
+                    "lineno": 44,
+                    "node_id": 258,
+                    "src": "985:4:0"
+                  }
+                }
+              }
+            },
+            "value": {
+              "ast_type": "Attribute",
+              "attr": "sender",
+              "col_offset": 43,
+              "end_col_offset": 53,
+              "end_lineno": 44,
+              "lineno": 44,
+              "node_id": 268,
+              "src": "1024:10:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 43,
+                "end_col_offset": 46,
+                "end_lineno": 44,
+                "id": "msg",
+                "lineno": 44,
+                "node_id": 269,
+                "src": "1024:3:0"
+              }
+            }
+          },
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 46,
+            "end_lineno": 45,
+            "lineno": 45,
+            "node_id": 272,
+            "src": "1039:42:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "date",
+              "col_offset": 4,
+              "end_col_offset": 39,
+              "end_lineno": 45,
+              "lineno": 45,
+              "node_id": 273,
+              "src": "1039:35:0",
+              "value": {
+                "ast_type": "Subscript",
+                "col_offset": 4,
+                "end_col_offset": 34,
+                "end_lineno": 45,
+                "lineno": 45,
+                "node_id": 274,
+                "slice": {
+                  "ast_type": "Index",
+                  "col_offset": 4,
+                  "end_col_offset": 34,
+                  "end_lineno": 45,
+                  "lineno": 45,
+                  "node_id": 284,
+                  "src": "1039:30:0",
+                  "value": {
+                    "ast_type": "Attribute",
+                    "attr": "tweets_count",
+                    "col_offset": 16,
+                    "end_col_offset": 33,
+                    "end_lineno": 45,
+                    "lineno": 45,
+                    "node_id": 279,
+                    "src": "1051:17:0",
+                    "value": {
+                      "ast_type": "Name",
+                      "col_offset": 16,
+                      "end_col_offset": 20,
+                      "end_lineno": 45,
+                      "id": "self",
+                      "lineno": 45,
+                      "node_id": 280,
+                      "src": "1051:4:0"
+                    }
+                  }
+                },
+                "src": "1039:30:0",
+                "value": {
+                  "ast_type": "Attribute",
+                  "attr": "tweets",
+                  "col_offset": 4,
+                  "end_col_offset": 15,
+                  "end_lineno": 45,
+                  "lineno": 45,
+                  "node_id": 275,
+                  "src": "1039:11:0",
+                  "value": {
+                    "ast_type": "Name",
+                    "col_offset": 4,
+                    "end_col_offset": 8,
+                    "end_lineno": 45,
+                    "id": "self",
+                    "lineno": 45,
+                    "node_id": 276,
+                    "src": "1039:4:0"
+                  }
+                }
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 42,
+              "end_col_offset": 46,
+              "end_lineno": 45,
+              "id": "date",
+              "lineno": 45,
+              "node_id": 286,
+              "src": "1077:4:0"
+            }
+          },
+          {
+            "ast_type": "AugAssign",
+            "col_offset": 4,
+            "end_col_offset": 26,
+            "end_lineno": 46,
+            "lineno": 46,
+            "node_id": 288,
+            "op": {
+              "ast_type": "Add",
+              "col_offset": 4,
+              "end_col_offset": 26,
+              "end_lineno": 46,
+              "lineno": 46,
+              "node_id": 293,
+              "src": "1086:22:0"
+            },
+            "src": "1086:22:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "tweets_count",
+              "col_offset": 4,
+              "end_col_offset": 21,
+              "end_lineno": 46,
+              "lineno": 46,
+              "node_id": 289,
+              "src": "1086:17:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 46,
+                "id": "self",
+                "lineno": 46,
+                "node_id": 290,
+                "src": "1086:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Int",
+              "col_offset": 25,
+              "end_col_offset": 26,
+              "end_lineno": 46,
+              "lineno": 46,
+              "node_id": 294,
+              "src": "1107:1:0",
+              "value": 1
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 9,
+            "end_lineno": 40,
+            "id": "external",
+            "lineno": 40,
+            "node_id": 295,
+            "src": "818:8:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 26,
+        "end_lineno": 46,
+        "lineno": 41,
+        "name": "newTweet",
+        "node_id": 214,
+        "pos": null,
+        "returns": null,
+        "src": "827:281:0"
+      }
+    ],
+    "col_offset": 0,
+    "doc_string": null,
+    "end_col_offset": 26,
+    "end_lineno": 46,
+    "lineno": 1,
+    "name": "contracts/TwitterOnBlockChain.vy",
+    "node_id": 0,
+    "src": "0:1108:0"
+  },
+  "bytecode": "0x600060015560006005556104db56600436101561000d576104c7565b600035601c52600051341561002157600080fd5b6317d7de7c811415610169576000610140526101406101206000600a818352015b61012051600360c052602060c02001543314156100625760018352610072565b8151600101808352811415610042575b5050506101405115156100c4576308c379a06101605260206101805260136101a0527f21596f75206e6f742073696e67656420696e2e000000000000000000000000006101c0526101a050606461017cfd5b60023360e05260c052604060c0208060c052602060c020610180602082540161012060006002818352015b8261012051602002111561010257610124565b61012051850154610120516020028501525b81516001018083528114156100ef575b50505050505061018051806101a001818260206001820306601f82010390500336823750506020610160526040610180510160206001820306601f8201039050610160f35b63704f7ee28114156102d157603e60043560040161014037601e60043560040135111561019557600080fd5b60006101a0526101a06101206000600a818352015b61012051600360c052602060c02001543314156101ca57600183526101da565b81516001018083528114156101aa575b5050506101a05115151561022d576308c379a06101c05260206101e0526016610200527f21596f7520616c72656164792073696e67656420696e00000000000000000000610220526102005060646101dcfd5b6101408060023360e05260c052604060c02060c052602060c020602082510161012060006002818352015b8261012051602002111561026b5761028d565b61012051602002850151610120518501555b8151600101808352811415610258575b50505050505033600554600a81106102a457600080fd5b600360c052602060c02001556005805460018181830110156102c557600080fd5b80820190509050815550005b63377b47a381141561037a576000610140526101406101206000600a818352015b61012051600360c052602060c02001543314156103125760018352610322565b81516001018083528114156102f2575b505050610140511515610374576308c379a06101605260206101805260166101a0527f21596f7520617265206e6f742073696e67656420696e000000000000000000006101c0526101a050606461017cfd5b33600455005b63c6efb1d48114156104c557610138600435600401610140376101186004356004013511156103a857600080fd5b600454331415156103f8576308c379a06102a05260206102c052600f6102e0527f2153696e6720696e2066697273742e0000000000000000000000000000000000610300526102e05060646102bcfd5b61014080600060015460e05260c052604060c02060c052602060c02060c052602060c02060208251016101206000600a818352015b8261012051602002111561044057610462565b61012051602002850151610120518501555b815160010180835281141561042d575b505050505050336001600060015460e05260c052604060c02060c052602060c02001556024356002600060015460e05260c052604060c02060c052602060c02001556001805460018181830110156104b957600080fd5b80820190509050815550005b505b60006000fd5b61000e6104db0361000e60003961000e6104db036000f3",
+  "bytecodeSha1": "adbc1775b4a160aa199171f2b27749c1db2be3d0",
+  "compiler": {
+    "evm_version": "istanbul",
+    "version": "0.2.12"
+  },
+  "contractName": "TwitterOnBlockChain",
+  "coverageMap": {
+    "branches": {
+      "0": {
+        "TwitterOnBlockChain.SingUp": {
+          "4": [
+            517,
+            583,
+            true
+          ]
+        },
+        "TwitterOnBlockChain.getName": {
+          "1": [
+            373,
+            432,
+            true
+          ]
+        },
+        "TwitterOnBlockChain.logIn": {
+          "9": [
+            726,
+            788,
+            true
+          ]
+        },
+        "TwitterOnBlockChain.newTweet": {
+          "12": [
+            880,
+            929,
+            true
+          ]
+        }
+      }
+    },
+    "statements": {
+      "0": {
+        "TwitterOnBlockChain.SingUp": {
+          "3": [
+            517,
+            583
+          ],
+          "5": [
+            588,
+            622
+          ],
+          "6": [
+            627,
+            672
+          ],
+          "7": [
+            677,
+            697
+          ]
+        },
+        "TwitterOnBlockChain.getName": {
+          "0": [
+            373,
+            432
+          ],
+          "2": [
+            437,
+            471
+          ]
+        },
+        "TwitterOnBlockChain.logIn": {
+          "8": [
+            726,
+            788
+          ],
+          "10": [
+            793,
+            815
+          ]
+        },
+        "TwitterOnBlockChain.newTweet": {
+          "11": [
+            880,
+            929
+          ],
+          "13": [
+            934,
+            980
+          ],
+          "14": [
+            985,
+            1034
+          ],
+          "15": [
+            1039,
+            1081
+          ],
+          "16": [
+            1086,
+            1108
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "0x600436101561000d576104c7565b600035601c52600051341561002157600080fd5b6317d7de7c811415610169576000610140526101406101206000600a818352015b61012051600360c052602060c02001543314156100625760018352610072565b8151600101808352811415610042575b5050506101405115156100c4576308c379a06101605260206101805260136101a0527f21596f75206e6f742073696e67656420696e2e000000000000000000000000006101c0526101a050606461017cfd5b60023360e05260c052604060c0208060c052602060c020610180602082540161012060006002818352015b8261012051602002111561010257610124565b61012051850154610120516020028501525b81516001018083528114156100ef575b50505050505061018051806101a001818260206001820306601f82010390500336823750506020610160526040610180510160206001820306601f8201039050610160f35b63704f7ee28114156102d157603e60043560040161014037601e60043560040135111561019557600080fd5b60006101a0526101a06101206000600a818352015b61012051600360c052602060c02001543314156101ca57600183526101da565b81516001018083528114156101aa575b5050506101a05115151561022d576308c379a06101c05260206101e0526016610200527f21596f7520616c72656164792073696e67656420696e00000000000000000000610220526102005060646101dcfd5b6101408060023360e05260c052604060c02060c052602060c020602082510161012060006002818352015b8261012051602002111561026b5761028d565b61012051602002850151610120518501555b8151600101808352811415610258575b50505050505033600554600a81106102a457600080fd5b600360c052602060c02001556005805460018181830110156102c557600080fd5b80820190509050815550005b63377b47a381141561037a576000610140526101406101206000600a818352015b61012051600360c052602060c02001543314156103125760018352610322565b81516001018083528114156102f2575b505050610140511515610374576308c379a06101605260206101805260166101a0527f21596f7520617265206e6f742073696e67656420696e000000000000000000006101c0526101a050606461017cfd5b33600455005b63c6efb1d48114156104c557610138600435600401610140376101186004356004013511156103a857600080fd5b600454331415156103f8576308c379a06102a05260206102c052600f6102e0527f2153696e6720696e2066697273742e0000000000000000000000000000000000610300526102e05060646102bcfd5b61014080600060015460e05260c052604060c02060c052602060c02060c052602060c02060208251016101206000600a818352015b8261012051602002111561044057610462565b61012051602002850151610120518501555b815160010180835281141561042d575b505050505050336001600060015460e05260c052604060c02060c052602060c02001556024356002600060015460e05260c052604060c02060c052602060c02001556001805460018181830110156104b957600080fd5b80820190509050815550005b505b60006000fd",
+  "deployedSourceMap": "-1:-1:0:-;;;;;:::-;;:::-;:::-;;;;;;;;;;:::-;;;;:::-;340:131;;;;;:::-;-1:-1;;;;;;;;;;;:::-;;;394:15;-1:-1;;;;;;;380:10;-1:-1;;;:::-;;;;;:::-;:::-;;;;;;;;;;;;:::-;:::-;;;;;;373:59;;;:::-;;;;;;;411:21;;;;;;;373:59;;;;:::-;444:15;460:10;-1:-1;;;;;;;;437:34;;;;;;;;;;;;;;;;;:::-;;;;;;;;;:::-;;:::-;:::-;;;;;;;;;;;;;:::-;;;;;;;;;;;;:::-;:::-;;;;;;;-1:-1;;;;;;;;;;;;;;;;;;;;;;;437:34;;;;;;;;-1:-1;;;;;;;;;;;437:34;;340:131::-;483:214;;;;;:::-;-1:-1;;;;;;;;;;;;;;;;:::-;;;;:::-;;;;;;;;;;;;:::-;;;542:15;-1:-1;;;;;;;528:10;-1:-1;;;:::-;;;;;:::-;:::-;;;;;;;;;;;;:::-;:::-;;;;;;524:33;517:66;;;:::-;;;;;;;559:24;;;;;;;517:66;;;;:::-;618:4;588:34;:15;604:10;-1:-1;;;;;;;588:34;;;;;;;;;;;;;;;;:::-;;;;;;;;;:::-;;:::-;:::-;;;;;;;;;;;;;:::-;;;;;;;;;;;;:::-;:::-;;;;;;;662:10;643:15;627:32;;;;;:::-;;;;:::-;:15;:32;;;;;;:45;677:15;;;696:1;677:20;;;;-1:-1;;677:20;:::-;;;;:::-;;;;;;;;;;;483:214;:::-;709:106;;;;;:::-;-1:-1;;;;;;;;;;;:::-;;;747:15;-1:-1;;;;;;;733:10;-1:-1;;;:::-;;;;;:::-;:::-;;;;;;;;;;;;:::-;:::-;;;;;;726:62;;;:::-;;;;;;;764:24;;;;;;;726:62;;;;:::-;805:10;793:9;:22;709:106;:::-;827:281;;;;;:::-;-1:-1;;;;;;;;;;;;;;;;:::-;;;;:::-;901:9;887:23;:10;:23;880:49;;;:::-;;;;;;;912:17;;;;;;;880:49;;;;:::-;975:5;934:46;:11;946:17;-1:-1;;;;;;;;;;;;;934:46;;;;;;;;;;;;;;;;:::-;;;;;;;;;:::-;;:::-;:::-;;;;;;;;;;;;;:::-;;;;;;;;;;;;:::-;:::-;;;;;;;1024:10;-1:-1;985:11;997:17;-1:-1;;;;;;;;;;;;;;985:49;1077:4;-1:-1;;1039:11;1051:17;-1:-1;;;;;;;;;;;;;;1039:42;1086:17;;;1107:1;1086:22;;;;-1:-1;;1086:22;:::-;;;;:::-;;;;;;;;;;;827:281;:::-;-1:-1;:::-;;;;",
+  "language": "Vyper",
+  "natspec": {
+    "methods": {}
+  },
+  "offset": [
+    0,
+    1108
+  ],
+  "opcodes": "PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH2 0x0D JUMPI PUSH2 0x4C7 JUMP JUMPDEST PUSH1 0x0 CALLDATALOAD PUSH1 0x1C MSTORE PUSH1 0x0 MLOAD CALLVALUE ISZERO PUSH2 0x021 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH4 0x17D7DE7C DUP2 EQ ISZERO PUSH2 0x169 JUMPI PUSH1 0x0 PUSH2 0x140 MSTORE PUSH2 0x140 PUSH2 0x120 PUSH1 0x0 PUSH1 0xA DUP2 DUP4 MSTORE ADD JUMPDEST PUSH2 0x120 MLOAD PUSH1 0x3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 ADD SLOAD CALLER EQ ISZERO PUSH2 0x062 JUMPI PUSH1 0x1 DUP4 MSTORE PUSH2 0x072 JUMP JUMPDEST DUP2 MLOAD PUSH1 0x1 ADD DUP1 DUP4 MSTORE DUP2 EQ ISZERO PUSH2 0x042 JUMPI JUMPDEST POP POP POP PUSH2 0x140 MLOAD ISZERO ISZERO PUSH2 0x0C4 JUMPI PUSH4 0x8C379A0 PUSH2 0x160 MSTORE PUSH1 0x20 PUSH2 0x180 MSTORE PUSH1 0x13 PUSH2 0x1A0 MSTORE PUSH32 0x21596F75206E6F742073696E67656420696E2E0000000000000 PUSH2 0x1C0 MSTORE PUSH2 0x1A0 POP PUSH1 0x64 PUSH2 0x17C REVERT JUMPDEST PUSH1 0x2 CALLER PUSH1 0xE0 MSTORE PUSH1 0xC0 MSTORE PUSH1 0x40 PUSH1 0xC0 SHA3 DUP1 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 PUSH2 0x180 PUSH1 0x20 DUP3 SLOAD ADD PUSH2 0x120 PUSH1 0x0 PUSH1 0x2 DUP2 DUP4 MSTORE ADD JUMPDEST DUP3 PUSH2 0x120 MLOAD PUSH1 0x20 MUL GT ISZERO PUSH2 0x12 JUMPI PUSH2 0x124 JUMP JUMPDEST PUSH2 0x120 MLOAD DUP6 ADD SLOAD PUSH2 0x120 MLOAD PUSH1 0x20 MUL DUP6 ADD MSTORE JUMPDEST DUP2 MLOAD PUSH1 0x1 ADD DUP1 DUP4 MSTORE DUP2 EQ ISZERO PUSH2 0x0EF JUMPI JUMPDEST POP POP POP POP POP POP PUSH2 0x180 MLOAD DUP1 PUSH2 0x1A0 ADD DUP2 DUP3 PUSH1 0x20 PUSH1 0x1 DUP3 SUB MOD PUSH1 0x1F DUP3 ADD SUB SWAP1 POP SUB CALLDATASIZE DUP3 CALLDATACOPY POP POP PUSH1 0x20 PUSH2 0x160 MSTORE PUSH1 0x40 PUSH2 0x180 MLOAD ADD PUSH1 0x20 PUSH1 0x1 DUP3 SUB MOD PUSH1 0x1F DUP3 ADD SUB SWAP1 POP PUSH2 0x160 RETURN JUMPDEST PUSH4 0x704F7EE2 DUP2 EQ ISZERO PUSH2 0x2D1 JUMPI PUSH1 0x3E PUSH1 0x4 CALLDATALOAD PUSH1 0x4 ADD PUSH2 0x140 CALLDATACOPY PUSH1 0x1E PUSH1 0x4 CALLDATALOAD PUSH1 0x4 ADD CALLDATALOAD GT ISZERO PUSH2 0x195 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 PUSH2 0x1A0 MSTORE PUSH2 0x1A0 PUSH2 0x120 PUSH1 0x0 PUSH1 0xA DUP2 DUP4 MSTORE ADD JUMPDEST PUSH2 0x120 MLOAD PUSH1 0x3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 ADD SLOAD CALLER EQ ISZERO PUSH2 0x1CA JUMPI PUSH1 0x1 DUP4 MSTORE PUSH2 0x1DA JUMP JUMPDEST DUP2 MLOAD PUSH1 0x1 ADD DUP1 DUP4 MSTORE DUP2 EQ ISZERO PUSH2 0x1AA JUMPI JUMPDEST POP POP POP PUSH2 0x1A0 MLOAD ISZERO ISZERO ISZERO PUSH2 0x22D JUMPI PUSH4 0x8C379A0 PUSH2 0x1C0 MSTORE PUSH1 0x20 PUSH2 0x1E0 MSTORE PUSH1 0x16 PUSH2 0x20 MSTORE PUSH32 0x21596F7520616C72656164792073696E67656420696E0000000000 PUSH2 0x220 MSTORE PUSH2 0x20 POP PUSH1 0x64 PUSH2 0x1DC REVERT JUMPDEST PUSH2 0x140 DUP1 PUSH1 0x2 CALLER PUSH1 0xE0 MSTORE PUSH1 0xC0 MSTORE PUSH1 0x40 PUSH1 0xC0 SHA3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 PUSH1 0x20 DUP3 MLOAD ADD PUSH2 0x120 PUSH1 0x0 PUSH1 0x2 DUP2 DUP4 MSTORE ADD JUMPDEST DUP3 PUSH2 0x120 MLOAD PUSH1 0x20 MUL GT ISZERO PUSH2 0x26B JUMPI PUSH2 0x28D JUMP JUMPDEST PUSH2 0x120 MLOAD PUSH1 0x20 MUL DUP6 ADD MLOAD PUSH2 0x120 MLOAD DUP6 ADD SSTORE JUMPDEST DUP2 MLOAD PUSH1 0x1 ADD DUP1 DUP4 MSTORE DUP2 EQ ISZERO PUSH2 0x258 JUMPI JUMPDEST POP POP POP POP POP POP CALLER PUSH1 0x5 SLOAD PUSH1 0xA DUP2 LT PUSH2 0x2A4 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 ADD SSTORE PUSH1 0x5 DUP1 SLOAD PUSH1 0x1 DUP2 DUP2 DUP4 ADD LT ISZERO PUSH2 0x2C5 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 DUP3 ADD SWAP1 POP SWAP1 POP DUP2 SSTORE POP STOP JUMPDEST PUSH4 0x377B47A3 DUP2 EQ ISZERO PUSH2 0x37A JUMPI PUSH1 0x0 PUSH2 0x140 MSTORE PUSH2 0x140 PUSH2 0x120 PUSH1 0x0 PUSH1 0xA DUP2 DUP4 MSTORE ADD JUMPDEST PUSH2 0x120 MLOAD PUSH1 0x3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 ADD SLOAD CALLER EQ ISZERO PUSH2 0x312 JUMPI PUSH1 0x1 DUP4 MSTORE PUSH2 0x322 JUMP JUMPDEST DUP2 MLOAD PUSH1 0x1 ADD DUP1 DUP4 MSTORE DUP2 EQ ISZERO PUSH2 0x2F2 JUMPI JUMPDEST POP POP POP PUSH2 0x140 MLOAD ISZERO ISZERO PUSH2 0x374 JUMPI PUSH4 0x8C379A0 PUSH2 0x160 MSTORE PUSH1 0x20 PUSH2 0x180 MSTORE PUSH1 0x16 PUSH2 0x1A0 MSTORE PUSH32 0x21596F7520617265206E6F742073696E67656420696E0000000000 PUSH2 0x1C0 MSTORE PUSH2 0x1A0 POP PUSH1 0x64 PUSH2 0x17C REVERT JUMPDEST CALLER PUSH1 0x4 SSTORE STOP JUMPDEST PUSH4 0xC6EFB1D4 DUP2 EQ ISZERO PUSH2 0x4C5 JUMPI PUSH2 0x138 PUSH1 0x4 CALLDATALOAD PUSH1 0x4 ADD PUSH2 0x140 CALLDATACOPY PUSH2 0x118 PUSH1 0x4 CALLDATALOAD PUSH1 0x4 ADD CALLDATALOAD GT ISZERO PUSH2 0x3A8 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x4 SLOAD CALLER EQ ISZERO ISZERO PUSH2 0x3F8 JUMPI PUSH4 0x8C379A0 PUSH2 0x2A0 MSTORE PUSH1 0x20 PUSH2 0x2C0 MSTORE PUSH1 0xF PUSH2 0x2E0 MSTORE PUSH32 0x2153696E6720696E2066697273742E00000000000000000 PUSH2 0x30 MSTORE PUSH2 0x2E0 POP PUSH1 0x64 PUSH2 0x2BC REVERT JUMPDEST PUSH2 0x140 DUP1 PUSH1 0x0 PUSH1 0x1 SLOAD PUSH1 0xE0 MSTORE PUSH1 0xC0 MSTORE PUSH1 0x40 PUSH1 0xC0 SHA3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 PUSH1 0x20 DUP3 MLOAD ADD PUSH2 0x120 PUSH1 0x0 PUSH1 0xA DUP2 DUP4 MSTORE ADD JUMPDEST DUP3 PUSH2 0x120 MLOAD PUSH1 0x20 MUL GT ISZERO PUSH2 0x440 JUMPI PUSH2 0x462 JUMP JUMPDEST PUSH2 0x120 MLOAD PUSH1 0x20 MUL DUP6 ADD MLOAD PUSH2 0x120 MLOAD DUP6 ADD SSTORE JUMPDEST DUP2 MLOAD PUSH1 0x1 ADD DUP1 DUP4 MSTORE DUP2 EQ ISZERO PUSH2 0x42D JUMPI JUMPDEST POP POP POP POP POP POP CALLER PUSH1 0x1 PUSH1 0x0 PUSH1 0x1 SLOAD PUSH1 0xE0 MSTORE PUSH1 0xC0 MSTORE PUSH1 0x40 PUSH1 0xC0 SHA3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 ADD SSTORE PUSH1 0x24 CALLDATALOAD PUSH1 0x2 PUSH1 0x0 PUSH1 0x1 SLOAD PUSH1 0xE0 MSTORE PUSH1 0xC0 MSTORE PUSH1 0x40 PUSH1 0xC0 SHA3 PUSH1 0xC0 MSTORE PUSH1 0x20 PUSH1 0xC0 SHA3 ADD SSTORE PUSH1 0x1 DUP1 SLOAD PUSH1 0x1 DUP2 DUP2 DUP4 ADD LT ISZERO PUSH2 0x4B9 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 DUP3 ADD SWAP1 POP SWAP1 POP DUP2 SSTORE POP STOP JUMPDEST POP JUMPDEST PUSH1 0x0 PUSH1 0x0 REVERT",
+  "pcMap": {
+    "0": {
+      "offset": [
+        0,
+        1108
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "2": {
+      "op": "CALLDATASIZE"
+    },
+    "3": {
+      "op": "LT"
+    },
+    "4": {
+      "op": "ISZERO"
+    },
+    "5": {
+      "op": "PUSH2",
+      "value": "0x0D"
+    },
+    "8": {
+      "op": "JUMPI"
+    },
+    "9": {
+      "op": "PUSH2",
+      "value": "0x4C7"
+    },
+    "12": {
+      "op": "JUMP"
+    },
+    "13": {
+      "op": "JUMPDEST"
+    },
+    "14": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "16": {
+      "op": "CALLDATALOAD"
+    },
+    "17": {
+      "op": "PUSH1",
+      "value": "0x1C"
+    },
+    "19": {
+      "op": "MSTORE"
+    },
+    "20": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "22": {
+      "op": "MLOAD"
+    },
+    "23": {
+      "op": "CALLVALUE"
+    },
+    "24": {
+      "op": "ISZERO"
+    },
+    "25": {
+      "op": "PUSH2",
+      "value": "0x021"
+    },
+    "28": {
+      "op": "JUMPI"
+    },
+    "29": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "31": {
+      "offset": [
+        0,
+        0
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "32": {
+      "dev": "Cannot send ether to nonpayable function",
+      "op": "REVERT"
+    },
+    "33": {
+      "op": "JUMPDEST"
+    },
+    "34": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        340,
+        471
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x17D7DE7C"
+    },
+    "39": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        340,
+        471
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "40": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        340,
+        471
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "41": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        340,
+        471
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "42": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        340,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x169"
+    },
+    "45": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        340,
+        471
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "46": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "48": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "51": {
+      "op": "MSTORE"
+    },
+    "52": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "55": {
+      "op": "PUSH2",
+      "value": "0x120"
+    },
+    "58": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "60": {
+      "op": "PUSH1",
+      "value": "0xA"
+    },
+    "62": {
+      "op": "DUP2"
+    },
+    "63": {
+      "op": "DUP4"
+    },
+    "64": {
+      "op": "MSTORE"
+    },
+    "65": {
+      "op": "ADD"
+    },
+    "66": {
+      "op": "JUMPDEST"
+    },
+    "67": {
+      "op": "PUSH2",
+      "value": "0x120"
+    },
+    "70": {
+      "op": "MLOAD"
+    },
+    "71": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        394,
+        409
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 0,
+      "value": "0x3"
+    },
+    "73": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "75": {
+      "op": "MSTORE"
+    },
+    "76": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "78": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "80": {
+      "op": "SHA3"
+    },
+    "81": {
+      "op": "ADD"
+    },
+    "82": {
+      "op": "SLOAD"
+    },
+    "83": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        380,
+        390
+      ],
+      "op": "CALLER",
+      "path": "0"
+    },
+    "84": {
+      "op": "EQ"
+    },
+    "85": {
+      "op": "ISZERO"
+    },
+    "86": {
+      "op": "PUSH2",
+      "value": "0x062"
+    },
+    "89": {
+      "op": "JUMPI"
+    },
+    "90": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "92": {
+      "op": "DUP4"
+    },
+    "93": {
+      "op": "MSTORE"
+    },
+    "94": {
+      "op": "PUSH2",
+      "value": "0x072"
+    },
+    "97": {
+      "op": "JUMP"
+    },
+    "98": {
+      "op": "JUMPDEST"
+    },
+    "99": {
+      "op": "DUP2"
+    },
+    "100": {
+      "op": "MLOAD"
+    },
+    "101": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "103": {
+      "op": "ADD"
+    },
+    "104": {
+      "op": "DUP1"
+    },
+    "105": {
+      "op": "DUP4"
+    },
+    "106": {
+      "op": "MSTORE"
+    },
+    "107": {
+      "op": "DUP2"
+    },
+    "108": {
+      "op": "EQ"
+    },
+    "109": {
+      "op": "ISZERO"
+    },
+    "110": {
+      "op": "PUSH2",
+      "value": "0x042"
+    },
+    "113": {
+      "op": "JUMPI"
+    },
+    "114": {
+      "op": "JUMPDEST"
+    },
+    "115": {
+      "op": "POP"
+    },
+    "116": {
+      "op": "POP"
+    },
+    "117": {
+      "op": "POP"
+    },
+    "118": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "121": {
+      "op": "MLOAD"
+    },
+    "122": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "123": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "124": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x0C4"
+    },
+    "127": {
+      "branch": 1,
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "128": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x8C379A0"
+    },
+    "133": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x160"
+    },
+    "136": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "137": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "139": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x180"
+    },
+    "142": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "143": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        411,
+        432
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x13"
+    },
+    "145": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        411,
+        432
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1A0"
+    },
+    "148": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        411,
+        432
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "149": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        411,
+        432
+      ],
+      "op": "PUSH32",
+      "path": "0",
+      "value": "0x21596F75206E6F742073696E67656420696E2E0000000000000"
+    },
+    "182": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        411,
+        432
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1C0"
+    },
+    "185": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        411,
+        432
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "186": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        411,
+        432
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1A0"
+    },
+    "189": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "190": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x64"
+    },
+    "192": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x17C"
+    },
+    "195": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "196": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        373,
+        432
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "197": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        444,
+        459
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 2,
+      "value": "0x2"
+    },
+    "199": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        460,
+        470
+      ],
+      "op": "CALLER",
+      "path": "0"
+    },
+    "200": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "202": {
+      "op": "MSTORE"
+    },
+    "203": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "205": {
+      "op": "MSTORE"
+    },
+    "206": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "208": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "210": {
+      "op": "SHA3"
+    },
+    "211": {
+      "op": "DUP1"
+    },
+    "212": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "214": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "215": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "217": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "219": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "SHA3",
+      "path": "0"
+    },
+    "220": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x180"
+    },
+    "223": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "225": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "226": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "227": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "228": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "231": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "233": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x2"
+    },
+    "235": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "236": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "237": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "238": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "239": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "240": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "241": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "244": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "245": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "247": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MUL",
+      "path": "0"
+    },
+    "248": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "GT",
+      "path": "0"
+    },
+    "249": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "250": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x12"
+    },
+    "253": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "254": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x124"
+    },
+    "257": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "258": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "259": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "262": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "263": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP6",
+      "path": "0"
+    },
+    "264": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "265": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "266": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "269": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "270": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "272": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MUL",
+      "path": "0"
+    },
+    "273": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP6",
+      "path": "0"
+    },
+    "274": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "275": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "276": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "277": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "278": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "279": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "281": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "282": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "283": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "284": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "285": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "286": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "287": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "288": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x0EF"
+    },
+    "291": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "292": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "293": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "294": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "295": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "296": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "297": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "298": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "299": {
+      "op": "PUSH2",
+      "value": "0x180"
+    },
+    "302": {
+      "op": "MLOAD"
+    },
+    "303": {
+      "op": "DUP1"
+    },
+    "304": {
+      "op": "PUSH2",
+      "value": "0x1A0"
+    },
+    "307": {
+      "op": "ADD"
+    },
+    "308": {
+      "op": "DUP2"
+    },
+    "309": {
+      "op": "DUP3"
+    },
+    "310": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "312": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "314": {
+      "op": "DUP3"
+    },
+    "315": {
+      "op": "SUB"
+    },
+    "316": {
+      "op": "MOD"
+    },
+    "317": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "319": {
+      "op": "DUP3"
+    },
+    "320": {
+      "op": "ADD"
+    },
+    "321": {
+      "op": "SUB"
+    },
+    "322": {
+      "op": "SWAP1"
+    },
+    "323": {
+      "op": "POP"
+    },
+    "324": {
+      "op": "SUB"
+    },
+    "325": {
+      "op": "CALLDATASIZE"
+    },
+    "326": {
+      "op": "DUP3"
+    },
+    "327": {
+      "op": "CALLDATACOPY"
+    },
+    "328": {
+      "op": "POP"
+    },
+    "329": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "330": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "332": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x160"
+    },
+    "335": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "336": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "338": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x180"
+    },
+    "341": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "342": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "343": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "345": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "347": {
+      "op": "DUP3"
+    },
+    "348": {
+      "op": "SUB"
+    },
+    "349": {
+      "op": "MOD"
+    },
+    "350": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "352": {
+      "op": "DUP3"
+    },
+    "353": {
+      "op": "ADD"
+    },
+    "354": {
+      "op": "SUB"
+    },
+    "355": {
+      "op": "SWAP1"
+    },
+    "356": {
+      "op": "POP"
+    },
+    "357": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x160"
+    },
+    "360": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        437,
+        471
+      ],
+      "op": "RETURN",
+      "path": "0"
+    },
+    "361": {
+      "fn": "TwitterOnBlockChain.getName",
+      "offset": [
+        340,
+        471
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "362": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x704F7EE2"
+    },
+    "367": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "368": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "369": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "370": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2D1"
+    },
+    "373": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "374": {
+      "op": "PUSH1",
+      "value": "0x3E"
+    },
+    "376": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "378": {
+      "op": "CALLDATALOAD"
+    },
+    "379": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "381": {
+      "op": "ADD"
+    },
+    "382": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "385": {
+      "op": "CALLDATACOPY"
+    },
+    "386": {
+      "op": "PUSH1",
+      "value": "0x1E"
+    },
+    "388": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "390": {
+      "op": "CALLDATALOAD"
+    },
+    "391": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "393": {
+      "op": "ADD"
+    },
+    "394": {
+      "op": "CALLDATALOAD"
+    },
+    "395": {
+      "op": "GT"
+    },
+    "396": {
+      "op": "ISZERO"
+    },
+    "397": {
+      "op": "PUSH2",
+      "value": "0x195"
+    },
+    "400": {
+      "op": "JUMPI"
+    },
+    "401": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "403": {
+      "op": "DUP1"
+    },
+    "404": {
+      "op": "REVERT"
+    },
+    "405": {
+      "op": "JUMPDEST"
+    },
+    "406": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "408": {
+      "op": "PUSH2",
+      "value": "0x1A0"
+    },
+    "411": {
+      "op": "MSTORE"
+    },
+    "412": {
+      "op": "PUSH2",
+      "value": "0x1A0"
+    },
+    "415": {
+      "op": "PUSH2",
+      "value": "0x120"
+    },
+    "418": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "420": {
+      "op": "PUSH1",
+      "value": "0xA"
+    },
+    "422": {
+      "op": "DUP2"
+    },
+    "423": {
+      "op": "DUP4"
+    },
+    "424": {
+      "op": "MSTORE"
+    },
+    "425": {
+      "op": "ADD"
+    },
+    "426": {
+      "op": "JUMPDEST"
+    },
+    "427": {
+      "op": "PUSH2",
+      "value": "0x120"
+    },
+    "430": {
+      "op": "MLOAD"
+    },
+    "431": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        542,
+        557
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 3,
+      "value": "0x3"
+    },
+    "433": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "435": {
+      "op": "MSTORE"
+    },
+    "436": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "438": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "440": {
+      "op": "SHA3"
+    },
+    "441": {
+      "op": "ADD"
+    },
+    "442": {
+      "op": "SLOAD"
+    },
+    "443": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        528,
+        538
+      ],
+      "op": "CALLER",
+      "path": "0"
+    },
+    "444": {
+      "op": "EQ"
+    },
+    "445": {
+      "op": "ISZERO"
+    },
+    "446": {
+      "op": "PUSH2",
+      "value": "0x1CA"
+    },
+    "449": {
+      "op": "JUMPI"
+    },
+    "450": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "452": {
+      "op": "DUP4"
+    },
+    "453": {
+      "op": "MSTORE"
+    },
+    "454": {
+      "op": "PUSH2",
+      "value": "0x1DA"
+    },
+    "457": {
+      "op": "JUMP"
+    },
+    "458": {
+      "op": "JUMPDEST"
+    },
+    "459": {
+      "op": "DUP2"
+    },
+    "460": {
+      "op": "MLOAD"
+    },
+    "461": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "463": {
+      "op": "ADD"
+    },
+    "464": {
+      "op": "DUP1"
+    },
+    "465": {
+      "op": "DUP4"
+    },
+    "466": {
+      "op": "MSTORE"
+    },
+    "467": {
+      "op": "DUP2"
+    },
+    "468": {
+      "op": "EQ"
+    },
+    "469": {
+      "op": "ISZERO"
+    },
+    "470": {
+      "op": "PUSH2",
+      "value": "0x1AA"
+    },
+    "473": {
+      "op": "JUMPI"
+    },
+    "474": {
+      "op": "JUMPDEST"
+    },
+    "475": {
+      "op": "POP"
+    },
+    "476": {
+      "op": "POP"
+    },
+    "477": {
+      "op": "POP"
+    },
+    "478": {
+      "op": "PUSH2",
+      "value": "0x1A0"
+    },
+    "481": {
+      "op": "MLOAD"
+    },
+    "482": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        524,
+        557
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "483": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "484": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "485": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x22D"
+    },
+    "488": {
+      "branch": 4,
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "489": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x8C379A0"
+    },
+    "494": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1C0"
+    },
+    "497": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "498": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "500": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1E0"
+    },
+    "503": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "504": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        559,
+        583
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x16"
+    },
+    "506": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        559,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x20"
+    },
+    "509": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        559,
+        583
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "510": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        559,
+        583
+      ],
+      "op": "PUSH32",
+      "path": "0",
+      "value": "0x21596F7520616C72656164792073696E67656420696E0000000000"
+    },
+    "543": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        559,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x220"
+    },
+    "546": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        559,
+        583
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "547": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        559,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x20"
+    },
+    "550": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "551": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x64"
+    },
+    "553": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1DC"
+    },
+    "556": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "557": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        517,
+        583
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "558": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        618,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "statement": 5,
+      "value": "0x140"
+    },
+    "561": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "562": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        603
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x2"
+    },
+    "564": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        604,
+        614
+      ],
+      "op": "CALLER",
+      "path": "0"
+    },
+    "565": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "567": {
+      "op": "MSTORE"
+    },
+    "568": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "570": {
+      "op": "MSTORE"
+    },
+    "571": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "573": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "575": {
+      "op": "SHA3"
+    },
+    "576": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "578": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "579": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "581": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "583": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "SHA3",
+      "path": "0"
+    },
+    "584": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "586": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "587": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "588": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "589": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "592": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "594": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x2"
+    },
+    "596": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "597": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "598": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "599": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "600": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "601": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "602": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "605": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "606": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "608": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MUL",
+      "path": "0"
+    },
+    "609": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "GT",
+      "path": "0"
+    },
+    "610": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "611": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x26B"
+    },
+    "614": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "615": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x28D"
+    },
+    "618": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "619": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "620": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "623": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "624": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "626": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MUL",
+      "path": "0"
+    },
+    "627": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP6",
+      "path": "0"
+    },
+    "628": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "629": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "630": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "633": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "634": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP6",
+      "path": "0"
+    },
+    "635": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "636": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "637": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "638": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "639": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "640": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "642": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "643": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "644": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "645": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "646": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "647": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "648": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "649": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x258"
+    },
+    "652": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "653": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "654": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "655": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "656": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "657": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "658": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "659": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        588,
+        622
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "660": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        662,
+        672
+      ],
+      "op": "CALLER",
+      "path": "0",
+      "statement": 6
+    },
+    "661": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        643,
+        658
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x5"
+    },
+    "663": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "664": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xA"
+    },
+    "666": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "667": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "LT",
+      "path": "0"
+    },
+    "668": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2A4"
+    },
+    "671": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "672": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "674": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "675": {
+      "dev": "Index out of range",
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "676": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "677": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        642
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x3"
+    },
+    "679": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "681": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "682": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "684": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "686": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "SHA3",
+      "path": "0"
+    },
+    "687": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        659
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "688": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        627,
+        672
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "689": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        692
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 7,
+      "value": "0x5"
+    },
+    "691": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        692
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "692": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        692
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "693": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        696,
+        697
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "695": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "696": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "697": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "698": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "699": {
+      "op": "LT"
+    },
+    "700": {
+      "op": "ISZERO"
+    },
+    "701": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2C5"
+    },
+    "704": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "705": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "707": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "708": {
+      "dev": "Integer overflow",
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "709": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "710": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "711": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "712": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "713": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "714": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "715": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "716": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "717": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "718": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "719": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        677,
+        697
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "720": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "STOP",
+      "path": "0"
+    },
+    "721": {
+      "fn": "TwitterOnBlockChain.SingUp",
+      "offset": [
+        483,
+        697
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "722": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x377B47A3"
+    },
+    "727": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "728": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "729": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "730": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x37A"
+    },
+    "733": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "734": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "736": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "739": {
+      "op": "MSTORE"
+    },
+    "740": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "743": {
+      "op": "PUSH2",
+      "value": "0x120"
+    },
+    "746": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "748": {
+      "op": "PUSH1",
+      "value": "0xA"
+    },
+    "750": {
+      "op": "DUP2"
+    },
+    "751": {
+      "op": "DUP4"
+    },
+    "752": {
+      "op": "MSTORE"
+    },
+    "753": {
+      "op": "ADD"
+    },
+    "754": {
+      "op": "JUMPDEST"
+    },
+    "755": {
+      "op": "PUSH2",
+      "value": "0x120"
+    },
+    "758": {
+      "op": "MLOAD"
+    },
+    "759": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        747,
+        762
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 8,
+      "value": "0x3"
+    },
+    "761": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "763": {
+      "op": "MSTORE"
+    },
+    "764": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "766": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "768": {
+      "op": "SHA3"
+    },
+    "769": {
+      "op": "ADD"
+    },
+    "770": {
+      "op": "SLOAD"
+    },
+    "771": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        733,
+        743
+      ],
+      "op": "CALLER",
+      "path": "0"
+    },
+    "772": {
+      "op": "EQ"
+    },
+    "773": {
+      "op": "ISZERO"
+    },
+    "774": {
+      "op": "PUSH2",
+      "value": "0x312"
+    },
+    "777": {
+      "op": "JUMPI"
+    },
+    "778": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "780": {
+      "op": "DUP4"
+    },
+    "781": {
+      "op": "MSTORE"
+    },
+    "782": {
+      "op": "PUSH2",
+      "value": "0x322"
+    },
+    "785": {
+      "op": "JUMP"
+    },
+    "786": {
+      "op": "JUMPDEST"
+    },
+    "787": {
+      "op": "DUP2"
+    },
+    "788": {
+      "op": "MLOAD"
+    },
+    "789": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "791": {
+      "op": "ADD"
+    },
+    "792": {
+      "op": "DUP1"
+    },
+    "793": {
+      "op": "DUP4"
+    },
+    "794": {
+      "op": "MSTORE"
+    },
+    "795": {
+      "op": "DUP2"
+    },
+    "796": {
+      "op": "EQ"
+    },
+    "797": {
+      "op": "ISZERO"
+    },
+    "798": {
+      "op": "PUSH2",
+      "value": "0x2F2"
+    },
+    "801": {
+      "op": "JUMPI"
+    },
+    "802": {
+      "op": "JUMPDEST"
+    },
+    "803": {
+      "op": "POP"
+    },
+    "804": {
+      "op": "POP"
+    },
+    "805": {
+      "op": "POP"
+    },
+    "806": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "809": {
+      "op": "MLOAD"
+    },
+    "810": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "811": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "812": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x374"
+    },
+    "815": {
+      "branch": 9,
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "816": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x8C379A0"
+    },
+    "821": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x160"
+    },
+    "824": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "825": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "827": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x180"
+    },
+    "830": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "831": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        764,
+        788
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x16"
+    },
+    "833": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        764,
+        788
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1A0"
+    },
+    "836": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        764,
+        788
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "837": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        764,
+        788
+      ],
+      "op": "PUSH32",
+      "path": "0",
+      "value": "0x21596F7520617265206E6F742073696E67656420696E0000000000"
+    },
+    "870": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        764,
+        788
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1C0"
+    },
+    "873": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        764,
+        788
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "874": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        764,
+        788
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1A0"
+    },
+    "877": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "878": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x64"
+    },
+    "880": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x17C"
+    },
+    "883": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "884": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        726,
+        788
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "885": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        805,
+        815
+      ],
+      "op": "CALLER",
+      "path": "0",
+      "statement": 10
+    },
+    "886": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        793,
+        802
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "888": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        793,
+        815
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "889": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "STOP",
+      "path": "0"
+    },
+    "890": {
+      "fn": "TwitterOnBlockChain.logIn",
+      "offset": [
+        709,
+        815
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "891": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xC6EFB1D4"
+    },
+    "896": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "897": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "898": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "899": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x4C5"
+    },
+    "902": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "903": {
+      "op": "PUSH2",
+      "value": "0x138"
+    },
+    "906": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "908": {
+      "op": "CALLDATALOAD"
+    },
+    "909": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "911": {
+      "op": "ADD"
+    },
+    "912": {
+      "op": "PUSH2",
+      "value": "0x140"
+    },
+    "915": {
+      "op": "CALLDATACOPY"
+    },
+    "916": {
+      "op": "PUSH2",
+      "value": "0x118"
+    },
+    "919": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "921": {
+      "op": "CALLDATALOAD"
+    },
+    "922": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "924": {
+      "op": "ADD"
+    },
+    "925": {
+      "op": "CALLDATALOAD"
+    },
+    "926": {
+      "op": "GT"
+    },
+    "927": {
+      "op": "ISZERO"
+    },
+    "928": {
+      "op": "PUSH2",
+      "value": "0x3A8"
+    },
+    "931": {
+      "op": "JUMPI"
+    },
+    "932": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "934": {
+      "op": "DUP1"
+    },
+    "935": {
+      "op": "REVERT"
+    },
+    "936": {
+      "op": "JUMPDEST"
+    },
+    "937": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        901,
+        910
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 11,
+      "value": "0x4"
+    },
+    "939": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        887,
+        910
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "940": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        887,
+        897
+      ],
+      "op": "CALLER",
+      "path": "0"
+    },
+    "941": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        887,
+        910
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "942": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "943": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "944": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x3F8"
+    },
+    "947": {
+      "branch": 12,
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "948": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x8C379A0"
+    },
+    "953": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2A0"
+    },
+    "956": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "957": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "959": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2C0"
+    },
+    "962": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "963": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        912,
+        929
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xF"
+    },
+    "965": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        912,
+        929
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2E0"
+    },
+    "968": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        912,
+        929
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "969": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        912,
+        929
+      ],
+      "op": "PUSH32",
+      "path": "0",
+      "value": "0x2153696E6720696E2066697273742E00000000000000000"
+    },
+    "1002": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        912,
+        929
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x30"
+    },
+    "1005": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        912,
+        929
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "1006": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        912,
+        929
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2E0"
+    },
+    "1009": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1010": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x64"
+    },
+    "1012": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2BC"
+    },
+    "1015": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "1016": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        880,
+        929
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "1017": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        975,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "statement": 13,
+      "value": "0x140"
+    },
+    "1020": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "1021": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        945
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "1023": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        946,
+        963
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "1025": {
+      "op": "SLOAD"
+    },
+    "1026": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "1028": {
+      "op": "MSTORE"
+    },
+    "1029": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1031": {
+      "op": "MSTORE"
+    },
+    "1032": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "1034": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1036": {
+      "op": "SHA3"
+    },
+    "1037": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1039": {
+      "op": "MSTORE"
+    },
+    "1040": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1042": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1044": {
+      "op": "SHA3"
+    },
+    "1045": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "1047": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "1048": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "1050": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xC0"
+    },
+    "1052": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "SHA3",
+      "path": "0"
+    },
+    "1053": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "1055": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "1056": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "1057": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "1058": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "1061": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "1063": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xA"
+    },
+    "1065": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "1066": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "1067": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "1068": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "1069": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "1070": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "1071": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "1074": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "1075": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "1077": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MUL",
+      "path": "0"
+    },
+    "1078": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "GT",
+      "path": "0"
+    },
+    "1079": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "1080": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x440"
+    },
+    "1083": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "1084": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x462"
+    },
+    "1087": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "1088": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "1089": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "1092": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "1093": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "1095": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MUL",
+      "path": "0"
+    },
+    "1096": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP6",
+      "path": "0"
+    },
+    "1097": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "1098": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "1099": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x120"
+    },
+    "1102": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "1103": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP6",
+      "path": "0"
+    },
+    "1104": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "1105": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "1106": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "1107": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "1108": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "1109": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "1111": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "1112": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "1113": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "1114": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "1115": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "1116": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "1117": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "1118": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x42D"
+    },
+    "1121": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "1122": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "1123": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1124": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1125": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1126": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1127": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1128": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        934,
+        980
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1129": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1024,
+        1034
+      ],
+      "op": "CALLER",
+      "path": "0",
+      "statement": 14
+    },
+    "1130": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1132": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        985,
+        996
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "1134": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        997,
+        1014
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "1136": {
+      "op": "SLOAD"
+    },
+    "1137": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "1139": {
+      "op": "MSTORE"
+    },
+    "1140": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1142": {
+      "op": "MSTORE"
+    },
+    "1143": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "1145": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1147": {
+      "op": "SHA3"
+    },
+    "1148": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1150": {
+      "op": "MSTORE"
+    },
+    "1151": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1153": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1155": {
+      "op": "SHA3"
+    },
+    "1156": {
+      "op": "ADD"
+    },
+    "1157": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        985,
+        1034
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "1158": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1077,
+        1081
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 15,
+      "value": "0x24"
+    },
+    "1160": {
+      "op": "CALLDATALOAD"
+    },
+    "1161": {
+      "op": "PUSH1",
+      "value": "0x2"
+    },
+    "1163": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1039,
+        1050
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "1165": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1051,
+        1068
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "1167": {
+      "op": "SLOAD"
+    },
+    "1168": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "1170": {
+      "op": "MSTORE"
+    },
+    "1171": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1173": {
+      "op": "MSTORE"
+    },
+    "1174": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "1176": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1178": {
+      "op": "SHA3"
+    },
+    "1179": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1181": {
+      "op": "MSTORE"
+    },
+    "1182": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "1184": {
+      "op": "PUSH1",
+      "value": "0xC0"
+    },
+    "1186": {
+      "op": "SHA3"
+    },
+    "1187": {
+      "op": "ADD"
+    },
+    "1188": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1039,
+        1081
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "1189": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1103
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 16,
+      "value": "0x1"
+    },
+    "1191": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1103
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "1192": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1103
+      ],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "1193": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1107,
+        1108
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "1195": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "1196": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "1197": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "1198": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "1199": {
+      "op": "LT"
+    },
+    "1200": {
+      "op": "ISZERO"
+    },
+    "1201": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x4B9"
+    },
+    "1204": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "1205": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "1207": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "1208": {
+      "dev": "Integer overflow",
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "1209": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "1210": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "1211": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "1212": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "ADD",
+      "path": "0"
+    },
+    "1213": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "1214": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1215": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "1216": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1217": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "1218": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "SSTORE",
+      "path": "0"
+    },
+    "1219": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        1086,
+        1108
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "1220": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "STOP",
+      "path": "0"
+    },
+    "1221": {
+      "fn": "TwitterOnBlockChain.newTweet",
+      "offset": [
+        827,
+        1108
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "1222": {
+      "op": "POP"
+    },
+    "1223": {
+      "op": "JUMPDEST"
+    },
+    "1224": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1226": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1228": {
+      "op": "REVERT"
+    }
+  },
+  "sha1": "ffba55daa0814d719b4ff437d0496e668a8d915f",
+  "source": "# @version ^0.2.8\n\n\nstruct Tweet:\n    message: String[280]\n    _addr: address\n    date: uint256\n\ntweets: HashMap[uint256, Tweet]\ntweets_count: uint256\n\nusers_data: HashMap[address, String[30]]\nusers_addr: address[10]\nuser: address\nuserus_num: uint256\n\n\n@external\ndef __init__():\n    self.tweets_count = 0\n    self.userus_num = 0\n\n@external\ndef getName() -> String[30]:\n    assert msg.sender in self.users_addr, '!You not singed in.'\n    return self.users_data[msg.sender]\n\n@external\ndef SingUp(name: String[30]):\n    assert not msg.sender in self.users_addr, '!You already singed in'\n    self.users_data[msg.sender] = name\n    self.users_addr[self.userus_num] = msg.sender\n    self.userus_num += 1\n\n@external\ndef logIn():\n    assert msg.sender in self.users_addr, '!You are not singed in'\n    self.user = msg.sender\n\n@external\ndef newTweet(tweet: String[280], date: uint256):\n    assert msg.sender == self.user, '!Sing in first.'\n    self.tweets[self.tweets_count].message = tweet\n    self.tweets[self.tweets_count]._addr = msg.sender\n    self.tweets[self.tweets_count].date = date\n    self.tweets_count += 1",
+  "sourceMap": "",
+  "sourcePath": "contracts/TwitterOnBlockChain.vy",
+  "type": "contract"
+}
