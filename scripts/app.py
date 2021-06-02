@@ -8,6 +8,9 @@ import os
 
 class APP(QtWidgets.QWidget):
     def __init__(self, contract):
+        try: os.mkdir('Accounts')
+        except FileExistsError:pass
+        
         self.contract = contract
         super().__init__()
         self.inintalizeUI()
